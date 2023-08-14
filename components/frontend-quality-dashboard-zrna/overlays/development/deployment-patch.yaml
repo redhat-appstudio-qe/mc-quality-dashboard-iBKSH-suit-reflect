@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: frontend-quality-dashboard-zrna
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-bjsp-tenant/mc-quality-dashboard/frontend-quality-dashboard-zrna@sha256:6dc892cda94d0c041dc8efec47582ef09b661eb248d8689e3d805e287db4982a
+        name: container-image
+        resources: {}
+status: {}
